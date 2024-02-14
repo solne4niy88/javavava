@@ -8,8 +8,11 @@ public class HomeWorkOne {
             System.out.println(false);
         }
     }
+    static int result(int a, int b, int c, int d) {
+        return a * (b + (c / d));
+    }
     public static void main(String[] args) {
         number(10,99);
     }
 }
-}
+
