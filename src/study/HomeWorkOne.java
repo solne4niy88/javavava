@@ -13,6 +13,7 @@ public class HomeWorkOne {
     }
     public static void main(String[] args) {
         number(10,99);
+        result(10,15,36,59);
     }
 }
 
