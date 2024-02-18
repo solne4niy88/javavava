@@ -13,12 +13,8 @@ public class HomeWorkEditOne {
     Есть подозрение что в скобки принтлн можно было подставить boolean или как то так и сам пичатал в зависимости от
     условий тру или фолс.
      */
-    static void number(int a, int b) {
-        if (a + b >= 10 && a + b <= 20) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+    static boolean number(int a, int b) {
+        return a + b >= 10 && a + b <= 20;
     }
 
     /*
@@ -27,9 +23,9 @@ public class HomeWorkEditOne {
      */
     static float result(int a, int b, int c, int d) {
         float r = a; float t = b; float y = c; float u = d;
-        float g = r * (t + (y / u));
-        System.out.println(g);
-        return g;
+        return  r * (t + (y / u));
+
+
     }
     /*
     Метод whyNumber не совсем отображает суть его работы. Так сказать отсебятина немного приближенная к нужному.
@@ -92,8 +88,8 @@ public class HomeWorkEditOne {
     }
 
     public static void main(String[] args) {
-        number(10, 99);
-        result(1, 2, 3, 4);
+        System.out.println( number(10, 99));
+        System.out.println(result(1, 2, 3, 4));
         whyNumber(56);
         negativNum(7);
         name("lolo");
